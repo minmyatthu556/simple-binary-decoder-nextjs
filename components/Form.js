@@ -43,7 +43,7 @@ const TranslateForm = (props) => {
           </div>
           <textarea
             id="input"
-            className="w-full px-3 py-2 shadow-lg bg-transparent-white text-xs sm:text-sm border border-transparent-white placeholder-dirty-white rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
+            className="w-full px-3 py-2 text-xs sm:text-sm text-grayish-black border rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
             name="translate"
             value={inputValue}
             cols="30"
@@ -56,7 +56,7 @@ const TranslateForm = (props) => {
             }`}
           ></textarea>
           <div className="text-center">
-            <button className="py-2 px-4 sm:py-4 sm:px-6 mt-8 text-xs sm:text-sm bg-white text-transparent-gray rounded-full uppercase font-semibold tracking-wider shadow-lg hover:bg-gray-50 transition transform hover:-translate-y-0.5 active:bg-white focus:outline-none focus:ring focus:ring-offset-1 focus:ring-blue-300">
+            <button className="py-2 px-4 sm:py-4 sm:px-6 mt-8 text-xs sm:text-sm bg-grayish-black text-white rounded-full uppercase font-semibold tracking-wider shadow-lg hover:bg-gray-900 transition transform hover:-translate-y-0.5 active:bg-black focus:outline-none focus:ring focus:ring-offset-1 focus:ring-grayish-black">
               Translate
             </button>
           </div>

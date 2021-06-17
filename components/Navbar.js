@@ -11,13 +11,13 @@ const Navbar = () => {
   const handleEngClick = () => setActivePage('/EngToBinary');
 
   return (
-    <div className="relative z-10">
-      <ul className="flex justify-center items-center mt-2 text-dirty-white">
+    <div>
+      <ul className="flex justify-center items-center mt-2">
         <li
           className={`mx-4 text-sm md:text-xl inline-block py-2 ${
             activePage === '/'
-              ? 'border-b-2 border-transparent-white'
-              : 'text-gray-500'
+              ? 'border-b-2 border-grayish-black'
+              : 'text-gray-600'
           }`}
           onClick={handleBiClick}
         >
@@ -26,8 +26,8 @@ const Navbar = () => {
         <li
           className={`mx-4 text-sm md:text-xl inline-block py-2 ${
             activePage === '/EngToBinary'
-              ? 'border-b-2 border-transparent-white'
-              : 'text-gray-500'
+              ? 'border-b-2 border-grayish-black'
+              : 'text-gray-600'
           }`}
           onClick={handleEngClick}
         >
