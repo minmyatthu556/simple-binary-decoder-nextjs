@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import Form from '../components/Form';
 
-export default function HomePage() {
+const Eng = () => {
   return (
     <div className="flex justify-center items-center">
       <Head>
@@ -10,9 +10,9 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Form inputType="bi" />
-      </main>
+      <Form inputType="eng" />
     </div>
   );
-}
+};
+
+export default Eng;
