@@ -33,7 +33,7 @@ const TranslateForm = (props) => {
   console.log(output);
 
   return (
-    <div className="my-8 mx-4 relative z-10 text-dirty-white bg-transparent-white backdrop-filter backdrop-blur-3xl rounded-lg shadow-xl border border-transparent-white">
+    <div className="my-8 mx-4 rounded-lg shadow-md border border-gray-400">
       <div className="p-6 sm:py-8 sm:px-12">
         <form onSubmit={handleTranslate} className="">
           <div className="pb-4">
@@ -43,7 +43,7 @@ const TranslateForm = (props) => {
           </div>
           <textarea
             id="input"
-            className="w-full px-3 py-2 text-xs sm:text-sm text-grayish-black border rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
+            className="w-full px-3 py-2 text-xs sm:text-sm text-grayish-black border border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
             name="translate"
             value={inputValue}
             cols="30"
