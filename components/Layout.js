@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 const Layout = (props) => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
       <Header />
       <Navbar />
       {props.children}
