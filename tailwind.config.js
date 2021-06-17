@@ -5,17 +5,42 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'grayish-black': '#000000ff',
+        'grayish-black': '#00000011',
+        'transparent-gray': '#000000aa',
+        'transparent-white': '#ffffff33',
+        'dirty-white': '#ffffffee',
       },
-      outline: {
-        'grayish-black': '2px solid #0000ff',
-      }
+      blur: {
+        '4xl': '150px',
+      },
+      animation: {
+        blob: 'blob 7s infinite',
+      },
+      keyframes: {
+        blob: {
+          '0%': {
+            transform: 'scale(1)',
+          },
+          '33%': {
+            transform: 'scale(1.1)',
+          },
+          '55%': {
+            transform: 'scale(1)',
+          },
+          '88%': {
+            transform: 'scale(0.9)',
+          },
+          '100%': {
+            transform: 'scale(1)',
+          },
+        },
+      },
     },
   },
   variants: {
     extend: {
-      backgroundColor: ['active']
+      backgroundColor: ['active'],
     },
   },
   plugins: [],
-}
+};

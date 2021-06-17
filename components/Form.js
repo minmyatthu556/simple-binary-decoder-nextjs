@@ -33,7 +33,7 @@ const TranslateForm = (props) => {
   console.log(output);
 
   return (
-    <div className="my-8 mx-4 bg-gray-100 rounded-lg shadow-lg">
+    <div className="my-8 mx-4 relative z-10 text-dirty-white bg-transparent-white backdrop-filter backdrop-blur-3xl rounded-lg shadow-xl border border-transparent-white">
       <div className="p-6 sm:py-8 sm:px-12">
         <form onSubmit={handleTranslate} className="">
           <div className="pb-4">
@@ -43,7 +43,7 @@ const TranslateForm = (props) => {
           </div>
           <textarea
             id="input"
-            className="w-full px-3 py-2 text-xs sm:text-sm text-grayish-black border rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
+            className="w-full px-3 py-2 shadow-lg bg-transparent-white text-xs sm:text-sm border border-transparent-white placeholder-dirty-white rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
             name="translate"
             value={inputValue}
             cols="30"
@@ -56,7 +56,7 @@ const TranslateForm = (props) => {
             }`}
           ></textarea>
           <div className="text-center">
-            <button className="py-2 px-4 sm:py-4 sm:px-6 mt-8 text-xs sm:text-sm bg-grayish-black text-white rounded-full uppercase font-semibold tracking-wider shadow-lg hover:bg-gray-900 transition transform hover:-translate-y-0.5 active:bg-black focus:outline-none focus:ring focus:ring-offset-1 focus:ring-grayish-black">
+            <button className="py-2 px-4 sm:py-4 sm:px-6 mt-8 text-xs sm:text-sm bg-white text-transparent-gray rounded-full uppercase font-semibold tracking-wider shadow-lg hover:bg-gray-50 transition transform hover:-translate-y-0.5 active:bg-white focus:outline-none focus:ring focus:ring-offset-1 focus:ring-blue-300">
               Translate
             </button>
           </div>
