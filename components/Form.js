@@ -37,13 +37,13 @@ const TranslateForm = (props) => {
       <div className="p-6 sm:py-8 sm:px-12">
         <form onSubmit={handleTranslate} className="">
           <div className="pb-4">
-            <label htmlFor="input" className="sm:text-lg font-bold">
+            <label htmlFor="input" className="text-sm sm:text-lg font-bold">
               Input
             </label>
           </div>
           <textarea
             id="input"
-            className="w-full px-3 py-2 text-grayish-black border rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
+            className="w-full px-3 py-2 text-xs sm:text-sm text-grayish-black border rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400"
             name="translate"
             value={inputValue}
             cols="30"
@@ -56,14 +56,14 @@ const TranslateForm = (props) => {
             }`}
           ></textarea>
           <div className="text-center">
-            <button className="py-4 px-6 mt-8 text-sm bg-grayish-black text-white rounded-full uppercase font-semibold tracking-wider shadow-lg hover:bg-gray-900 transition transform hover:-translate-y-0.5 active:bg-black focus:outline-none focus:ring focus:ring-offset-1 focus:ring-grayish-black">
+            <button className="py-2 px-4 sm:py-4 sm:px-6 mt-8 text-xs sm:text-sm bg-grayish-black text-white rounded-full uppercase font-semibold tracking-wider shadow-lg hover:bg-gray-900 transition transform hover:-translate-y-0.5 active:bg-black focus:outline-none focus:ring focus:ring-offset-1 focus:ring-grayish-black">
               Translate
             </button>
           </div>
         </form>
         <div className="my-4 max-w-lg">
-          <h1 className="sm:text-lg font-bold">Output: </h1>
-          <p>{output}</p>
+          <h3 className="text-sm sm:text-lg font-bold">Output</h3>
+          <p className="text-sm sm:text-base">{output}</p>
         </div>
       </div>
     </div>

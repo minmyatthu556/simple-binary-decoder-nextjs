@@ -7,8 +7,8 @@ const Layout = (props) => {
       <Header />
       <Navbar />
       {props.children}
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <p className="text-gray-500 text-sm">Made by mmt</p>
+      <footer className="flex items-center justify-center absolute bottom-0 w-full py-4 border-t">
+        <p className="text-gray-500 text-xs md:text-sm">Made by mmt</p>
       </footer>
     </div>
   );
